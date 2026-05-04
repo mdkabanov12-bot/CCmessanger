@@ -140,7 +140,7 @@
         fetch('/get_messages')
         .then(response => response.json())
         .then(messages => {
-            setInterval(renderMessages(messages), delayInMilliseconds);
+            setInterval(renderMessages(messages), 3000);
             scrollToLastMessage(); // Автоскролл к последнему сообщению при загрузке
         })
         .catch(error => {
